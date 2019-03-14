@@ -1,3 +1,11 @@
+.navbar {
+    background-color: #9c27b0;
+}
+
+.navbar-light .navbar-brand {
+    color: white !important;
+    font-weight: 600;
+}
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors

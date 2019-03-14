@@ -62,7 +62,7 @@ function (_React$Component) {
           lineNumber: 12
         },
         __self: this
-      }, "reactstrap")));
+      }, "Saral")));
     }
   }]);
 
@@ -74,4 +74,4 @@ function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.70d033725b9394d2a031.hot-update.js.map
+//# sourceMappingURL=index.js.6762777ed78aa74d7b2e.hot-update.js.map

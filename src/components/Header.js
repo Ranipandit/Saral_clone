@@ -10,7 +10,7 @@ class Header extends React.Component {
       <div>
         <Navbar color="green" light>
           <NavbarBrand href="/" className="mr-auto">
-            reactstrap
+            Saral
           </NavbarBrand>
         </Navbar>
       </div>
