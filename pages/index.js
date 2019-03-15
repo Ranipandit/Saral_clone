@@ -13,10 +13,10 @@ class Home extends React.Component {
             }
     }
 
-    componentDidMount(){
-        axios.get('http://saral.navgurukul.org/api/courses')
+    async componentDidMount(){
+       await axios.get('http://saral.navgurukul.org/api/courses')
         .then(res => {
-            const courses = res.data
+            const courses = res.data.availableCourses
             this.setState({courses})
         })
         .catch(error => console.log("There is an error in API call",error))
@@ -24,11 +24,11 @@ class Home extends React.Component {
 
     render(){
         const { courses } = this.state;
-        console.log(courses)
+        // console.log(courses)
         return(
             <div>
                 <Header />
-                <Courses />
+                <Courses courses={courses} />
             </div>
         )
     }

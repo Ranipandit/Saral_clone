@@ -3,30 +3,18 @@ import { Card, Button, CardTitle, CardText, Row, Col } from "reactstrap";
 
 class Courses extends React.Component {
   render() {
+    const { courses } = this.props
+    console.log(courses)
     return (
-      <div>
-        <Row>
-          <Col sm="6">
-            <Card body>
-              <CardTitle>Special Title Treatment</CardTitle>
-              <CardText>
-                With supporting text below as a natural lead-in to additional
-                content.
-              </CardText>
-              <Button>Go somewhere</Button>
-            </Card>
-          </Col>
-          <Col sm="6">
-            <Card body>
-              <CardTitle>Special Title Treatment</CardTitle>
-              <CardText>
-                With supporting text below as a natural lead-in to additional
-                content.
-              </CardText>
-              <Button>Go somewhere</Button>
-            </Card>
-          </Col>
-        </Row>
+      <div className="course_root">
+          {courses.map((data,index) => {
+            <Card body className="courses_card" key={index}>
+            <CardTitle>{data.name}</CardTitle>
+            <CardText>
+             {data.shortDescription}
+            </CardText>
+          </Card>
+          })}
       </div>
     );
   }
